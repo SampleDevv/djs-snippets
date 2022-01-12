@@ -1,6 +1,6 @@
-client.on('message', message =>{ // ивент, когда приходит любое сообщение в чат 
+client.on('message', message =>{ 
   if (message.channel.type === 'dm') return;
-  if (message.author.bot) return; // если автор сообщения - бот, ничего не происходит 
+  if (message.author.bot) return; 
   const mentionRegex = RegExp(`^<@!?766665508266311730>$`);
   const mentionRegexPrefix = RegExp(`^<@!?766665508266311730$>`);
 
